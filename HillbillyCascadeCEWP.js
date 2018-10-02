@@ -7,23 +7,14 @@
 		var cascadeArray = new Array();
 		
 		cascadeArray.push({
-			parentFormField: "State", //Display name on form of field from parent list
-			childList: "Counties", //List name of child list
+			parentFormField: "Unit", //Display name on form of field from parent list
+			childList: "Area", //List name of child list
 			childLookupField: "Title", //Internal field name in Child List used in lookup
-			childFormField: "County", //Display name on form of the child field
-			parentFieldInChildList: "State", //Internal field name in Child List of the parent field
-			firstOptionText: "< Select a County >"
+			childFormField: "Unit", //Display name on form of the child field
+			parentFieldInChildList: "Area", //Internal field name in Child List of the parent field
+			firstOptionText: "< Select an Area >"
 		});
 
-		cascadeArray.push({
-			parentFormField: "County", //Display name on form of field from parent list
-			childList: "Cities", //List name of child list
-			childLookupField: "Title", //Internal field name in Child List used in lookup
-			childFormField: "City", //Display name on form of the child field
-			parentFieldInChildList: "County", //Internal field name in Child List of the parent field
-			firstOptionText: "< Select a City >"
-		});
-		
 		
 		$().HillbillyCascade(cascadeArray);
 			
